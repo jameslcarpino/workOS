@@ -29,6 +29,6 @@
    
     Successful Login page -> Directory page -> Users page -> Back as needed.
 
-9.  If you go to the page Answered Questions, you'll see a pdf of the customer responses.
+9.  If you go to Assessment page, you'll see a pdf of the customer responses for part 1 of this.
 
 10. Have fun! :) 
