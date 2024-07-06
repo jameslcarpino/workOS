@@ -22,11 +22,9 @@ const redirectURI = 'http://localhost:8000/callback'
 const state = ''
 
 router.get('/', async function (req, res) {
-    
-
     if (session.isloggedin) {
         let before = req.query.before
-    let after = req.query.after
+        let after = req.query.after
 
     const directories = await workos.directorySync.listDirectories({
         limit: 5,
@@ -34,8 +32,6 @@ router.get('/', async function (req, res) {
         after: after,
         order: null,
     })
-    console.log("DIRECTORIES FROM get /",directories)
-
     before = directories.listMetadata.before
     after = directories.listMetadata.after
         res.render('login_successful.ejs', {
@@ -52,19 +48,16 @@ router.get('/', async function (req, res) {
 
 router.post('/login', (req, res) => {
     const login_type = req.body.login_method
-
     const params = {
         clientID: clientID,
         redirectURI: redirectURI,
         state: state,
     }
-
     if (login_type === 'saml') {
         params.organization = organizationID
     } else {
         params.provider = login_type
     }
-
     try {
         const url = workos.sso.getAuthorizationURL(params)
 
@@ -119,10 +112,10 @@ router.get('/logout', async (req, res) => {
 
 router.get('/directory', async (req, res) => {
     const directories = await workos.directorySync.listDirectories()
-    const directory = directories.data.filter((directory) => {
+    const directory = directories.data.filter(async(directory) => {
         return directory.id == req.query.id
     })[0]
-    res.render('directory.ejs', {
+     res.render('directory.ejs', {
         directory: directory,
         title: 'Directory',
     })
