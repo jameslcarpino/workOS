@@ -32,14 +32,28 @@ body {
 .flex_column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .m-top-20 {
     margin-top: 20px;
 }
+.ta-left {
+    text-align: left;
+}
 
+.ta-right{
+    text-align: center;
+}
+
+.table-headers{
+    text-decoration: underline;
+    text-align: center;
+}
+.width-507px {
+    width: 507px;
+    border-spacing: 10px;
+}
 .width-75 {
     width: 75%;
 }

@@ -132,4 +132,8 @@ router.get("/users", async (req, res) => {
   res.render("users.ejs", { users: users.data });
 });
 
+router.get("/assessment", function(req,res){
+  res.render("assessment.ejs")
+})
+
 export default router;
