@@ -188,7 +188,7 @@ body {
 
 .button:hover,
 .button-outline:hover {
-    background-color: #555555;
+    background-color: #7fbcee;
     border: 2px solid #555555;
     color: white;
 }
@@ -355,19 +355,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-.google_button {
-    background-image: url("../images/google-button.png");
-    background-size: cover;
-}
-
-.microsoft_button {
-    background-image: url("../images/microsoft-button.png");
-    background-size: cover;
-}
 
 .saml_button {
-    background-image: url("../images/saml-button.png");
-    background-size: cover;
+    background-image: url("../images/Okta_Wordmark_Black_L.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.saml_button:hover{
+    background-color: #000000;
+    background-image: url("../images/Okta_Wordmark_White_L.png")
 }
 
 .error_message {
