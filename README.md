@@ -6,7 +6,7 @@
 
 3. Install packages: `npm install`
    
-4. Add an `.env` file to this project and add the following values:
+4. Add an `.env` file to this project and add the following values (after this assessment has been reviewed I will be removing this intentional secret key leak):
    ```
     WORKOS_API_KEY=sk_test_a2V5XzAxSjIwNDVLMUJGUkpRV05IMktBWkdLWDIzLFlXUTMyTlp6b3BpWk8xSlNmWUlKazdXTFg
     WORKOS_CLIENT_ID=client_01J2045KEKZAZ2KEHKBCSTB8NY
