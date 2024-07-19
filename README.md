@@ -6,10 +6,10 @@
 
 3. Install packages: `npm install`
    
-4. Add an `.env` file to this project and add the following values (after this assessment has been reviewed I will be removing this intentional secret key leak):
+4. Add an `.env` file to this project and add a workos api key as well as client id:
    ```
-    WORKOS_API_KEY=sk_test_a2V5XzAxSjIwNDVLMUJGUkpRV05IMktBWkdLWDIzLFlXUTMyTlp6b3BpWk8xSlNmWUlKazdXTFg
-    WORKOS_CLIENT_ID=client_01J2045KEKZAZ2KEHKBCSTB8NY
+    WORKOS_API_KEY={your api key}
+    WORKOS_CLIENT_ID={client_id}
 
 5. Make sure you're in the project workOS directory and start the app: `npm start`   
    
